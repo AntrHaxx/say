@@ -22,10 +22,12 @@ If you never used a Makefile before, there is a chance that you don't have the r
 
 `sudo apt-get install build-essential`
 
-### Install Say!
+### Install the program
 
 Through a terminal, go to the say folder and type:
 
 `make install`
 
 This command will create a debian package and install it in your system.
+
+You're ready to go!
