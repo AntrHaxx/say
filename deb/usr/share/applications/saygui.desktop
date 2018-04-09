@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Say!
+Comment=Sets say command's preferences
+Exec=saygui
+Icon=/usr/share/icons/saygui/saygui.png
+Terminal=false
+Categories=GTK;GNOME;Settings;

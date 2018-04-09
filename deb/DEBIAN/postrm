@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/bin/rm -f .say.wav .say.cfg .say.txt
