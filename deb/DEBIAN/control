@@ -3,7 +3,7 @@ Version: 0.0.1
 Section: base
 Priority: optional
 Architecture: all
-Depends: bash, xsel, sox, libttspico-utils
+Depends: bash, xsel, sox, libttspico-utils, libgtk2.0-0
 Maintainer: jnh14@hotmail.fr
 Description: Simple and configurable text to speech utility
 Homepage: https://github.com/AntrHaxx

@@ -10,7 +10,7 @@ FLAGS=-Wall -Werror -Wextra
 
 INCS=-I./src/incs/
 
-GTKLIBS=`pkg-config --libs --cflags gtk+-3.0`
+GTKLIBS=`pkg-config --libs --cflags gtk+-2.0`
 
 _SRCS_SAY=main say read merge language join config config_check string
 
