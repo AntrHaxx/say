@@ -1,6 +1,6 @@
 # say!
 
-Say is a small text to speech program for Debian based systems. This tool allows you to read texts from many sources orally. Read text can be output to an audio file saved on your system.
+Say is a text to speech program for Debian based systems. This tool allows you to read texts from many sources orally. Read text can be output to an audio file saved on your system.
 
 ## Flexible
 
