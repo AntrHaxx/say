@@ -62,7 +62,7 @@ int		main(int argc, char **argv)
 
 	// Definition tu titre et de la taille de la fenetre
 	gtk_window_set_title(GTK_WINDOW(window), "Say! Preferences");
-	gtk_widget_set_size_request(window, 480, 480);
+	gtk_widget_set_size_request(window, 640, 480);
 
 
 
@@ -91,6 +91,8 @@ int		main(int argc, char **argv)
 
 	// Definition des champs de la box principale
 	gtk_box_pack_start(GTK_BOX(box_main), box_config, 1, 0, 0);
+	gtk_box_pack_start(GTK_BOX(box_main), gtk_vseparator_new(), 0, 1, 0);
+	gtk_box_pack_start(GTK_BOX(box_main), gtk_label_new("To read a text directly, select it with your mouse and press <Super>+Escaoe."), 1, 1, 0);
 	gtk_box_pack_start(GTK_BOX(box_main), gtk_vseparator_new(), 0, 1, 0);
 	gtk_box_pack_start(GTK_BOX(box_main), btn_save, 0, 0, 0);
 

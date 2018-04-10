@@ -44,4 +44,10 @@ void	ft_get_default_cfg(t_config *config)
 	config->speed = 1;
 	config->vol = 1;
 	config->saying = false;
+	config->output = NULL;
+}
+
+int		ft_is_flag(char *s1, char *s2, char *s3)
+{
+	return (strcmp(s1, s2) == 0 || (s3 != NULL && strcmp(s1, s3) == 0));
 }

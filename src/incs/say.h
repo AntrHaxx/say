@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -23,6 +24,7 @@ typedef struct	s_config
 	float		vol;
 	char		*lng;
 	bool		saying;
+	char		*output;
 }				t_config;
 
 // Merge Functions: Converts arguments to string
@@ -57,6 +59,8 @@ bool	ft_read_cfg(t_config *cfg);
 bool	ft_write_cfg(t_config *config);
 void	ft_get_default_cfg(t_config *config);
 void	ft_args_to_cfg(char **str, t_config *config, int argc, char **argv);
+void	ft_check_cfg(t_config *config, char **str, int *argc, char ***argv);
+int		ft_is_flag(char *s1, char *s2, char *s3);
 
 // Config Check Functions: Check config elements
 bool	ft_check_flag_l(t_config *config, char *arg);
@@ -68,5 +72,8 @@ bool	ft_check_flag_f(char **str, char *arg);
 void	ft_clean(char **str);
 char	*itoa(int n);
 char	*ftoa(float n);
+
+//	System Functions: Functions overlays for system calls
+void ft_system(char *input);
 
 #endif
