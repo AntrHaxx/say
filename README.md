@@ -32,6 +32,14 @@ This command will create a debian package and install it in your system.
 
 **You're ready to go!**
 
+## Usage Examples
+
+
+
 ## RTFM
 
 More details about **say** command usage can be found in the say's man pages.
+
+## Troubleshooting
+
+
