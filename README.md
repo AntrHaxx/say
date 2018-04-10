@@ -94,7 +94,7 @@ This command will get specified file's content and read it.
 
 #### --config option
 
-**--config** option helps to modify the default configuration. It is used with **-l**, **-s** and **-v** options.
+**-c, --config** option helps to modify the default configuration. It is used with **-l**, **-s** and **-v** options.
 
 Simgle config option definition:
 
@@ -108,10 +108,26 @@ Multiple options can be defined at same time:
 
 `say --config -d`
 
+#### --xsel option
+
+**-x, --xsel** option takes advantage of the xsel package. It allows **say** to read text from your GUI. You can combine this option with other basic options **-l**, **-s** and **-v**. This option is used by a keyboard shortcut installed with Say! that allows you to read texts within your GUI by selecting a text and pressing the shortcut (<Super>+Escape) to start reading.
+
+Typing
+
+`xsel | say`
+
+is same as
+
+`say --xsel`
+
+You can combine it with basic options this way:
+
+`say --xsel -l en-GB -v 1.3 -s 0.098`
+
 ## RTFM
 
 More details about **say** command usage can be found in the say's man pages.
 
 ## Troubleshooting
 
-
+Say may use some non open free software.
