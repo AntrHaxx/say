@@ -17,6 +17,8 @@ The program comprehends over to 6 languages with a human feeling:
 - Italian
 - Spanish
 
+Speech loudness and rate can also be specified thanks command options. In same way, speech can be output to a given file path.
+
 ## Easy to use
 
 Say comes with a keyboard shortcut configured to help you to read selected text more easilly. Simply select a text with your mouse, press \<Super\>+Escape ans **say** will read it!
@@ -43,7 +45,40 @@ This command will create a debian package and install it in your system.
 
 ## Usage Examples
 
+### Most basic usage may be:
 
+`say Hello World!`
+
+All command arguments will be interpreted a being part of the text to read unless you specify command options.
+
+### Basic command options
+
+Basic command options permits you to customize the current command call. There are four basic options:
+
+- -f, --file
+- -l, --language
+- -s, --speed
+- -v, --volume
+
+These options cann be added individually or combined
+
+Try :
+
+`say -v 0.5 Hey you, stop shouting!`
+
+or
+
+`say -s 1.5 What did you say?`
+
+or even
+
+`say -v 1 -s 0.8 Could you repeat please?`
+
+Example with --file:
+
+`say -l es -v 1.2 -s 0.7 -f path/to/file`
+
+This command will get specified file's content and read it.
 
 ## RTFM
 
