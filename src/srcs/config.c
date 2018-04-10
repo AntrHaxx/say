@@ -49,5 +49,5 @@ void	ft_get_default_cfg(t_config *config)
 
 int		ft_is_flag(char *s1, char *s2, char *s3)
 {
-	return (strcmp(s1, s2) == 0 || (s3 != NULL && strcmp(s1, s3) == 0));
+	return (strcmp(ft_strtolower(&s1), s2) == 0 || (s3 != NULL && strcmp(ft_strtolower(&s1), s3) == 0));
 }

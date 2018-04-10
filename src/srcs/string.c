@@ -57,3 +57,17 @@ void	ft_clean(char **str)
 		i++;
 	}
 }
+
+char	*ft_strtolower(char **str)
+{
+	int i;
+
+	i = 0;
+	while ((*str)[i] != '\0')
+	{
+		if ((*str)[i] >= 'A' && (*str)[i] <= 'Z')
+			(*str)[i] += ('a' - 'A');
+		i++;
+	}
+	return (*str);
+}

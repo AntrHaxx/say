@@ -72,6 +72,7 @@ bool	ft_check_flag_f(char **str, char *arg);
 void	ft_clean(char **str);
 char	*itoa(int n);
 char	*ftoa(float n);
+char	*ft_strtolower(char **str);
 
 //	System Functions: Functions overlays for system calls
 void ft_system(char *input);

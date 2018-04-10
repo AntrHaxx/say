@@ -2,25 +2,20 @@
 
 void	ft_check_cfg(t_config *config, char **str, int *argc, char ***argv)
 {
-	int		i;
-
-	i = 0;
-	while (*argc && (ft_is_flag((*argv)[i], "-l", "--language") ||
-				ft_is_flag((*argv)[i], "-s", "--speed") ||
-				ft_is_flag((*argv)[i], "-v", "--volume") ||
-				ft_is_flag((*argv)[i], "-o", "--output") ||
-				ft_is_flag((*argv)[i], "-f", "--file")))
+	while (*argc)
 	{
-		if (ft_is_flag((*argv)[i], "-l", "--language"))
-			ft_check_flag_l(config, (*argv)[i + 1]);
-		else if (ft_is_flag((*argv)[i], "-s", "--speed"))
-			ft_check_flag_s(config, (*argv)[i + 1]);
-		else if (ft_is_flag((*argv)[i], "-v", "--volume"))
-			ft_check_flag_v(config, (*argv)[i + 1]);
-		else if (ft_is_flag((*argv)[i], "-f", "--file"))
-			ft_check_flag_f(str, (*argv)[i + 1]);
-		else if (ft_is_flag((*argv)[i], "-o", "--output"))
-			config->output = (*argv)[i + 1];
+		if (ft_is_flag((*argv)[0], "-l", "--language"))
+			ft_check_flag_l(config, (*argv)[1]);
+		else if (ft_is_flag((*argv)[0], "-s", "--speed"))
+			ft_check_flag_s(config, (*argv)[1]);
+		else if (ft_is_flag((*argv)[0], "-v", "--volume"))
+			ft_check_flag_v(config, (*argv)[1]);
+		else if (ft_is_flag((*argv)[0], "-f", "--file"))
+			ft_check_flag_f(str, (*argv)[1]);
+		else if (ft_is_flag((*argv)[0], "-o", "--output"))
+			config->output = (*argv)[1];
+		else
+			break;
 		*argc -= 2;
 		*argv += 2;
 	}
