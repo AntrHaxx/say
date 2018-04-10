@@ -53,9 +53,10 @@ All command arguments will be interpreted a being part of the text to read unles
 
 ### Basic command options
 
-Basic command options permits you to customize the current command call. There are four basic options:
+Basic command options permits you to customize the current command call. There are a few basic options:
 
 - -f, --file
+- -h, --help
 - -l, --language
 - -s, --speed
 - -v, --volume
@@ -90,6 +91,22 @@ Example with --file:
 `say -l es -v 1.2 -s 0.7 -f path/to/file`
 
 This command will get specified file's content and read it.
+
+#### --config option
+
+**--config** option helps to modify the default configuration. It is used with **-l**, **-s** and **-v** options.
+
+Simgle config option definition:
+
+`say --config -l fr`
+
+Multiple options can be defined at same time:
+
+`say -s 1.5 -v 1.2`
+
+**-d** option is a special one. When called with **--config** it resets system defaults configuration.
+
+`say --config -d`
 
 ## RTFM
 
