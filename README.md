@@ -124,6 +124,10 @@ You can combine it with basic options this way:
 
 `say --xsel -l en-GB -v 1.3 -s 0.098`
 
+#### --output
+
+**-o, --output** option allows you to save the read text as an audio file. Currently, only *.wav* format is supported. This option can be combined to any say call except **--config**
+
 ## RTFM
 
 More details about **say** command usage can be found in the say's man pages.
