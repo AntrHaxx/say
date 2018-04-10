@@ -128,6 +128,14 @@ You can combine it with basic options this way:
 
 **-o, --output** option allows you to save the read text as an audio file. Currently, only *.wav* format is supported. This option can be combined to any say call except **--config**
 
+Simple example
+
+`say --output path/to/file.wav Hello World!`
+
+Example with custom configuration
+
+`say -l en-US -v 1.5 --output path/to/file.wav This audio file has a loud US English voice`
+
 ## RTFM
 
 More details about **say** command usage can be found in the say's man pages.
