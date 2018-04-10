@@ -60,7 +60,18 @@ Basic command options permits you to customize the current command call. There a
 - -s, --speed
 - -v, --volume
 
-These options cann be added individually or combined
+These options cann be added individually or combined. **-v** and **-s** options values go from 0.5 to 1.5. **-l** option accepts languages defined by their short or long name
+
+Short Name | Long Name | Stands For
+------------|------------|------------
+en | en-US | English (US)
+-- | en-GB | English (GB)
+fr | fr-FR | French
+de | de-DE | Deutsch
+it | it-IT | Italian
+es | es-ES | Spanish
+
+#### Sample command calls
 
 Try :
 
