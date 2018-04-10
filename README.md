@@ -8,11 +8,20 @@ The **say** command accepts all types of call that can be made within a terminal
 
 Text can be given to **say** through its arguments or standard input. **-f** options also allows you tu define a file to be read. The **xsel** option causes to read the text selected with your mouse within your graphical interface.
 
+The program comprehends over to 6 languages with a human feeling:
+
+- English (US)
+- English (GB)
+- French
+- Deutsch
+- Italian
+- Spanish
+
 ## Easy to use
 
 Say comes with a keyboard shortcut configured to help you to read selected text more easilly. Simply select a text with your mouse, press \<Super\>+Escape ans **say** will read it!
 
-A configuration panel is added to your **system preferences** section so you can define the default language, volume and speed that **say** will use.
+A configuration panel is added to your **system preferences** section so you can define the default language, volume and speed that **say** will use by default.
 
 ## Give it a try!
 
