@@ -2,7 +2,7 @@
 
 void	ft_check_cfg(t_config *config, char **str, int *argc, char ***argv)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	while (*argc && (ft_is_flag((*argv)[i], "-l", "--language") ||
@@ -64,7 +64,7 @@ int		main(int argc, char **argv)
 		else
 			printf("Current configuration is:\nLanguage: %s\nVolume: %f\nSpeed: %f\n", config.lng, config.vol, config.speed);
 	}
-	else if (argc && ft_is_flag(argv[0], "-x", "--xsel"))
+	else if (argc && (ft_is_flag(argv[0], "-x", "--xsel") || strcmp(argv[0], "xsel") == 0))
 	{
 		path=ft_merge("\0", 2, getenv("HOME"), "/.say.txt");
 		system("xsel > ~/.say.txt");
@@ -108,7 +108,11 @@ int		main(int argc, char **argv)
 			}
 			ft_say(&str, &config);
 			if (config.output != NULL)
-				system(ft_merge(" ", 2, "mv -f ~/.say.wav", config.output));
+			{
+				path = ft_merge(" ", 2, "mv ~/.say.wav", config.output);
+				system(path);
+				free(path);
+			}
 			else
 				system("/bin/rm ~/.say.wav");
 			if (argc && ft_is_flag(argv[0], "-x", "--xsel"))
